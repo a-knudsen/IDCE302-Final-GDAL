@@ -43,6 +43,9 @@ Common commands:
 ## Download Sample Data:
 - Natural Earth: “Natural Earth II is a raster map dataset that portrays the world environment in an idealized manner with little human influence. “
   - https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-2/
+  
+  ![](ppt/nat_earth.png)
+  
 - Beijing data: Advanced Vector class share
   - Raster and Vector (Powerlines, Great Wall of China, Wind Speeds, and DEM)
   
