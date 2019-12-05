@@ -114,23 +114,25 @@ FAILURE: No source dataset specified.
 - Working with same raster and geopackage 
 - Creation option - append subdataset to existing geopackage
 - Creation options: Raster_Table to rename raster table
-``` gdal_translate -of GPKG NE2_LR_LC_SR_W.tif myNewGPKG.gpkg -co QUALITY=100 -co APPEND_SUBDATASET=YES -co RASTER_TABLE=elevTable ```
-Output:
+- ``` gdal_translate -of GPKG NE2_LR_LC_SR_W.tif myNewGPKG.gpkg -co QUALITY=100 -co APPEND_SUBDATASET=YES -co RASTER_TABLE=elevTable ```
+- Output:
 ```Input file size is 16200, 8100```
 ```0...10...20...30...40...50...60...70...80...90...100 - done.```
 
 #### Merging shape files
 - Format:
-```ogr2ogr -f ‘ESRI Shapefile’ merge.shp filename1.shp ```
-```ogr2ogr -f ‘ESRI Shapefile’ -update -append merge.shp filename2.shp -nln merge```
+  - ```ogr2ogr -f ‘ESRI Shapefile’ merge.shp filename1.shp ```
+  - ```ogr2ogr -f ‘ESRI Shapefile’ -update -append merge.shp filename2.shp -nln merge```
 - Create new shape file called “merge”
 - Then update and merge shapefiles into it
 - My shapefiles are called study_area_boundary.shp Counties_StudyArea.shp
-``` ogr2ogr -f 'ESRI Shapefile' merge.shp study_area_boundary.shp ```
-``` ogr2ogr -f 'ESRI Shapefile' -update -append merge.shp Counties_StudyArea.shp -nln merge ```
+  - ``` ogr2ogr -f 'ESRI Shapefile' merge.shp study_area_boundary.shp ```
+  - ``` ogr2ogr -f 'ESRI Shapefile' -update -append merge.shp Counties_StudyArea.shp -nln merge ```
 - Again with vector shapefiles:
-``` ogr2ogr -f 'ESRI Shapefile' mergePowerWall.shp GreatWall_Beijing.shp ```
-``` ogr2ogr -f 'ESRI Shapefile' -update -append mergePowerWall.shp Powerlines_Beijing.shp -nln merge ```
+  - ``` ogr2ogr -f 'ESRI Shapefile' mergePowerWall.shp GreatWall_Beijing.shp ```
+  - ``` ogr2ogr -f 'ESRI Shapefile' -update -append mergePowerWall.shp Powerlines_Beijing.shp -nln merge ```
+
+![](ppt/merge_finder.png)
 
 ## Takeaways:
 - Operating Terminal 
@@ -142,6 +144,7 @@ Output:
   - Free
  - Limitations
   - Confusing to unfamiliar users 
+  - Need additional software to visualize 
 
 ## Suggestions:
 - Check all download requirements 
