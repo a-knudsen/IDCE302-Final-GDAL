@@ -1,11 +1,16 @@
-# did not work 
+# Ahna Knudsen 
+# GDAL Demo 
+# December 5, 2019
+# Check installation, move raster file to geopackage, and merge shapefiles
+
+# did not work due to path error 
 Ahnas-MacBook-Pro:~ ahnaknudsen$ ogr2ogr
 -bash: ogr2ogr: command not found
 Ahnas-MacBook-Pro:~ ahnaknudsen$ brew install gdal2
 -bash: brew: command not found
 Ahnas-MacBook-Pro:~ ahnaknudsen$ gdalinfo --version
 -bash: gdalinfo: command not found
-# echo did work! 
+# fixed path error with echo  
 Ahnas-MacBook-Pro:~ ahnaknudsen$ echo 'export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH' >> ~/.bash_profile
 Ahnas-MacBook-Pro:~ ahnaknudsen$ source ~/.bash_profile
 # check to make sure installed 
@@ -35,10 +40,10 @@ Usage: gdal_translate [--help-general] [--long-usage]
        src_dataset dst_dataset
 
 FAILURE: No source dataset specified.
-Ahnas-MacBook-Pro:NE2_LR_LC_SR_W ahnaknudsen$ 
 
-
-# move raster file to geopackage 
+# Move raster file to geopackage 
+# raster file: NE2_LR_LC_SR_W.tif
+# Geopackage: myNewGPKG.gpkg
 # of = output format and co = creation option
 # QUALITY = 100 means there will be no compression
 
@@ -46,8 +51,8 @@ Ahnas-MacBook-Pro:NE2_LR_LC_SR_W ahnaknudsen$ gdal_translate -of GPKG NE2_LR_LC_
 Input file size is 16200, 8100
 0...10...20...30...40...50...60...70...80...90...100 - done.
 
-# same thing with even more hacks
-# creation option - append subdataset to existing geopackage
+# Repeat with additional parameters 
+# Creation option - append subdataset to existing geopackage
 # Creation options: Raster_Table to remane raster table
 Ahnas-MacBook-Pro:NE2_LR_LC_SR_W ahnaknudsen$ gdal_translate -of GPKG NE2_LR_LC_SR_W.tif myNewGPKG.gpkg -co QUALITY=100 -co APPEND_SUBDATASET=YES -co RASTER_TABLE=elevTable
 Input file size is 16200, 8100
@@ -55,7 +60,7 @@ Input file size is 16200, 8100
 
 
 
-# merging shape files
+# Merging shape files
 ‘’’
 format:
 ogr2ogr -f ‘ESRI Shapefile’ merge.shp filename1.shp
@@ -63,10 +68,12 @@ ogr2ogr -f ‘ESRI Shapefile’ -update -append merge.shp filename2.shp -nln mer
 ‘’’
 # create new shape file called “merge”
 # then update and merge shapefiles into it
+# shapefile names: study_area_boundary.shp and Counties_StudyArea.shp (polygons)
 Ahnas-MacBook-Pro:Preprocessed_Data ahnaknudsen$ ogr2ogr -f 'ESRI Shapefile' merge.shp study_area_boundary.shp
 Ahnas-MacBook-Pro:Preprocessed_Data ahnaknudsen$ ogr2ogr -f 'ESRI Shapefile' -update -append merge.shp Counties_StudyArea.shp -nln merge
 
-# again with line shapefiles
+# repeat
+# shapefile names: GreatWall_Beijing.shp and Powerlines_Beijing.shp (lines)
 Ahnas-MacBook-Pro:Preprocessed_Data ahnaknudsen$ ogr2ogr -f 'ESRI Shapefile' mergePowerWall.shp GreatWall_Beijing.shp
 Ahnas-MacBook-Pro:Preprocessed_Data ahnaknudsen$ ogr2ogr -f 'ESRI Shapefile' -update -append mergePowerWall.shp Powerlines_Beijing.shp -nln merge
 
