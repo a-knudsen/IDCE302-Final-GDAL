@@ -28,6 +28,7 @@ Common commands:
 - ``` Gdalwarp ```: raster data reprojection, resizing, clipping, and mosaicing 
 - ``` Ogrinfo ```: vector data and metadata querying
 - ``` Ogr2ogr ```: vector data format conversion, merging, reprojecting, clipping, etc
+- And many more 
 
 ## Download Process:
 - Attempted to download QGIS 
