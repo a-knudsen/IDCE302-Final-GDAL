@@ -1,3 +1,3 @@
 
 
-![](images/Copy.png)
+![](ppt/Copy_of_GDAL.jpg)
