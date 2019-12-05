@@ -12,31 +12,6 @@ Ahnas-MacBook-Pro:~ ahnaknudsen$ source ~/.bash_profile
 Ahnas-MacBook-Pro:~ ahnaknudsen$ gdalinfo --version
 GDAL 2.4.2, released 2019/06/28
 
-  [Restored Dec 1, 2019, 3:51:30 PM]
-Last login: Sun Dec  1 15:49:52 on console
-Ahnas-MacBook-Pro:~ ahnaknudsen$ cd Downloads
-Ahnas-MacBook-Pro:Downloads ahnaknudsen$ cd ne_10m_reefs
-Ahnas-MacBook-Pro:ne_10m_reefs ahnaknudsen$ cd../
--bash: cd../: No such file or directory
-Ahnas-MacBook-Pro:ne_10m_reefs ahnaknudsen$ cd ../
-Ahnas-MacBook-Pro:Downloads ahnaknudsen$ cd ../
-Ahnas-MacBook-Pro:~ ahnaknudsen$ cd Documents
-Ahnas-MacBook-Pro:Documents ahnaknudsen$ cd data
-Ahnas-MacBook-Pro:data ahnaknudsen$ gdalinfo ne_10m_reefs
-ERROR 4: `ne_10m_reefs' not recognized as a supported file format.
-gdalinfo failed - unable to open 'ne_10m_reefs'.
-Ahnas-MacBook-Pro:data ahnaknudsen$ cd ne_10m_reefs
-Ahnas-MacBook-Pro:ne_10m_reefs ahnaknudsen$ gdalinfo ne_10m_reefs.shp
-ERROR 4: `ne_10m_reefs.shp' not recognized as a supported file format.
-gdalinfo failed - unable to open 'ne_10m_reefs.shp'.
-Ahnas-MacBook-Pro:ne_10m_reefs ahnaknudsen$ cd ..//
-Ahnas-MacBook-Pro:data ahnaknudsen$ cd ..//
-Ahnas-MacBook-Pro:Documents ahnaknudsen$ cd ../
-Ahnas-MacBook-Pro:~ ahnaknudsen$ cd Downloads
-Ahnas-MacBook-Pro:Downloads ahnaknudsen$ cd NE2_LR_LC_SR_W
-Ahnas-MacBook-Pro:NE2_LR_LC_SR_W ahnaknudsen$ gdalinfo NE2_LR_LC_SR_W
-ERROR 4: NE2_LR_LC_SR_W: No such file or directory
-gdalinfo failed - unable to open 'NE2_LR_LC_SR_W'.
 
 # check if gdal is working 
 Ahnas-MacBook-Pro:NE2_LR_LC_SR_W ahnaknudsen$ gdal_translate
