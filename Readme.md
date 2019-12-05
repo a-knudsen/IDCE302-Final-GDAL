@@ -126,10 +126,11 @@ FAILURE: No source dataset specified.
   - ```ogr2ogr -f ‘ESRI Shapefile’ -update -append merge.shp filename2.shp -nln merge```
 - Create new shape file called “merge”
 - Then update and merge shapefiles into it
-- My shapefiles are called study_area_boundary.shp Counties_StudyArea.shp
+- My shapefiles are called study_area_boundary.shp Counties_StudyArea.shp (polygons)
   - ``` ogr2ogr -f 'ESRI Shapefile' merge.shp study_area_boundary.shp ```
   - ``` ogr2ogr -f 'ESRI Shapefile' -update -append merge.shp Counties_StudyArea.shp -nln merge ```
-- Again with vector shapefiles:
+- Repeat
+- Shapefiles: GreatWall_Beijing.shp and Powerlines_Beijing.shp (lines)
   - ``` ogr2ogr -f 'ESRI Shapefile' mergePowerWall.shp GreatWall_Beijing.shp ```
   - ``` ogr2ogr -f 'ESRI Shapefile' -update -append mergePowerWall.shp Powerlines_Beijing.shp -nln merge ```
 
