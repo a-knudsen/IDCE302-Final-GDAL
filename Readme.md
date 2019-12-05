@@ -7,8 +7,6 @@ By Ahna Knudsen
 
 ![](ppt/Copy_of_GDAL_2.jpg)
 
-![](ppt/Copy_of_GDAL_3.jpg)
-
 ### Data must have spatial aspect.
 Supported formats:
 - **Raster:** GeoTiff, JPEG, Erdas Imagine, DTED, and more
@@ -16,6 +14,8 @@ Supported formats:
 
 ## Uses of GDAL:
 Coordinate system conversion, statistics, format conversion, geo operations, image merge, etc. 
+
+![](ppt/projection_tween.gif)
 
 Two interfaces: API or command line
 ### 1. GDAL API:
@@ -34,6 +34,8 @@ Common commands:
 - Opened terminal 
 - Downloaded GDAL: 
   - http://www.kyngchaos.com/software/frameworks/
+  ![](ppt/kyngchaos.jpg)
+  
 - Check to make sure download worked 
   - ```echo ```
 - Download spatial data
