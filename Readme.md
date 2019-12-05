@@ -55,8 +55,14 @@ Common commands:
  - ```Org2org```
 
 ## Takeaways:
+- Operating Terminal 
+- Downloading new software
+- Capabilities and limitation of GDAL
 
 ## Suggestions:
+- Check all download requirements 
+- Set path
+- Check work with visualization software
 
 ## Links for Future Use with GDAL:
 - Mailing list: ask questions and report issues http://lists.osgeo.org/mailman/listinfo/gdal-dev
