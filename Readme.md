@@ -57,12 +57,18 @@ Common commands:
 ## Takeaways:
 - Operating Terminal 
 - Downloading new software
-- Capabilities and limitation of GDAL
+- Capabilities of GDAL
+  - Processing power
+  - Speed
+  - Open Source 
+ - Limitations
+  - Confusing to unfamiliar users 
 
 ## Suggestions:
 - Check all download requirements 
 - Set path
-- Check work with visualization software
+- Check work with visualization software 
+  - QGIS, Arc, etc
 
 ## Links for Future Use with GDAL:
 - Mailing list: ask questions and report issues http://lists.osgeo.org/mailman/listinfo/gdal-dev
