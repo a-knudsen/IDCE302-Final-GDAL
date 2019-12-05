@@ -48,8 +48,8 @@ Common commands:
 - ``` gdalinfo --version ```
 Gave error: "Command not found" due to an error with the path set up
 ### Fix Path Set Up:
-``` echo 'export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH' >> ~/.bash_profile ```
-``` source ~/.bash_profile ```
+- ``` echo 'export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH' >> ~/.bash_profile ```
+- ``` source ~/.bash_profile ```
 ### Check installation:
 ``` gdalinfo --version ```
 Ouput: GDAL 2.4.2, released 2019/06/28
@@ -98,6 +98,7 @@ Ouput: GDAL 2.4.2, released 2019/06/28
 
 FAILURE: No source dataset specified.
 ```
+
 #### Move raster file to geopackage 
 - Create a geopackage and name it (i.e. myNewGPKG.pgkg)
 - Choose raster file (i.e. NE2_LR_LC_SR_W.tif)
@@ -107,17 +108,17 @@ FAILURE: No source dataset specified.
 
 ```gdal_translate -of GPKG NE2_LR_LC_SR_W.tif myNewGPKG.gpkg -co QUALITY=100 ```
 - Output:
-```Input file size is 16200, 8100 ```
-``` 0...10...20...30...40...50...60...70...80...90...100 - done. ```
+  - ```Input file size is 16200, 8100 ```
+  - ``` 0...10...20...30...40...50...60...70...80...90...100 - done. ```
 
 #### Repeat with more parameters
 - Working with same raster and geopackage 
 - Creation option - append subdataset to existing geopackage
 - Creation options: Raster_Table to rename raster table
-- ``` gdal_translate -of GPKG NE2_LR_LC_SR_W.tif myNewGPKG.gpkg -co QUALITY=100 -co APPEND_SUBDATASET=YES -co RASTER_TABLE=elevTable ```
+  - ``` gdal_translate -of GPKG NE2_LR_LC_SR_W.tif myNewGPKG.gpkg -co QUALITY=100 -co APPEND_SUBDATASET=YES -co RASTER_TABLE=elevTable ```
 - Output:
-```Input file size is 16200, 8100```
-```0...10...20...30...40...50...60...70...80...90...100 - done.```
+  - ```Input file size is 16200, 8100```
+  - ```0...10...20...30...40...50...60...70...80...90...100 - done.```
 
 #### Merging shape files
 - Format:
@@ -133,6 +134,8 @@ FAILURE: No source dataset specified.
   - ``` ogr2ogr -f 'ESRI Shapefile' -update -append mergePowerWall.shp Powerlines_Beijing.shp -nln merge ```
 
 ![](ppt/merge_finder.png)
+
+![](ppt/vector_merge.png)
 
 ## Takeaways:
 - Operating Terminal 
