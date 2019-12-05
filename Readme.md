@@ -34,7 +34,7 @@ Common commands:
 - Opened terminal 
 - Downloaded GDAL: 
   - http://www.kyngchaos.com/software/frameworks/
-  ![](ppt/kyngchaos.jpg)
+  ![](ppt/kyngchaos.png)
   
 - Check to make sure download worked 
   - ```echo ```
