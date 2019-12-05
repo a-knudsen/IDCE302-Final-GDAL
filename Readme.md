@@ -1,5 +1,5 @@
 # GDAL Exploration 
-By Ahna Knudsen 
+*By Ahna Knudsen* 
 
 ![](ppt/Copy_of_GDAL.jpg)
 
