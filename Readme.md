@@ -111,6 +111,8 @@ FAILURE: No source dataset specified.
   - ```Input file size is 16200, 8100 ```
   - ``` 0...10...20...30...40...50...60...70...80...90...100 - done. ```
 
+![](ppt/geopackage.png)
+
 #### Repeat with more parameters
 - Working with same raster and geopackage 
 - Creation option - append subdataset to existing geopackage
