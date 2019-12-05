@@ -144,12 +144,12 @@ FAILURE: No source dataset specified.
 ## Takeaways:
 - Operating Terminal 
 - Downloading new software
-- Capabilities of GDAL
+- Benefits of GDAL:
   - Processing power
   - Speed
   - Open Source 
   - Free
- - Limitations
+ - Limitations:
   - Confusing to unfamiliar users 
   - Need additional software to visualize 
 
@@ -159,6 +159,7 @@ FAILURE: No source dataset specified.
 - Set path
 - Check work with visualization software to check outputs and progress 
   - QGIS, Arc, etc
+
 
 ## Links for Future Use with GDAL:
 - Mailing list: ask questions and report issues http://lists.osgeo.org/mailman/listinfo/gdal-dev
@@ -183,6 +184,8 @@ FAILURE: No source dataset specified.
 - https://tilemill-project.github.io/tilemill/docs/guides/gdal/
 - http://www.kyngchaos.com/software/frameworks/
 - https://www.northrivergeographic.com/ogr2ogr-merge-shapefiles
+
+
 
 # Questions?
 
