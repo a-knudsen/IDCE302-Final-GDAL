@@ -53,7 +53,7 @@ Gave error: "Command not found" due to an error with the path set up
 - ``` source ~/.bash_profile ```
 ### Check installation:
 ``` gdalinfo --version ```
-Ouput: GDAL 2.4.2, released 2019/06/28
+- Ouput: GDAL 2.4.2, released 2019/06/28
 
 ## Download Sample Data:
 - Natural Earth: “Natural Earth II is a raster map dataset that portrays the world environment in an idealized manner with little human influence. “
